@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: php-oauth-container
     ports:
-      - "8080:80"
+      - "7066:80"
     restart: unless-stopped
     environment:
       - REDIRECT_URI=https://isolarhelper.spm1.dev/
