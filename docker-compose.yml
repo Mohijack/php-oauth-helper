@@ -9,5 +9,3 @@ services:
     restart: unless-stopped
     environment:
       - REDIRECT_URI=https://isolarhelper.spm1.dev/
-    volumes:
-      - ./app:/var/www/html
