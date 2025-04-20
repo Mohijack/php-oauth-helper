@@ -1,0 +1,13 @@
+services:
+  php-oauth:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-oauth-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - REDIRECT_URI=https://isolarhelper.spm1.dev/
+    volumes:
+      - ./app:/var/www/html
